@@ -64,15 +64,20 @@ public class CardTrick {
 //        	 System.out.println(magicHand[i].getValue());
 //             System.out.println(magicHand[i].getSuit());
         	if(magicHand[i].getSuit() == pickedCard.getSuit() && magicHand[i].getValue() == pickedCard.getValue()) {
-        		printInfo();
+        	
         		break;
         	}
         }
+        printInfo("taranpreet kaur",18);
         
     }
-
-	private static void printInfo() {
+        // i'm done!
+	private static void printInfo(String a,int b) {
 		// TODO Auto-generated method stub
+                     
+        System.out.println("My name is "+ a);
+        System.out.println("My age is "+ b);
+       
 		
 	}
         
