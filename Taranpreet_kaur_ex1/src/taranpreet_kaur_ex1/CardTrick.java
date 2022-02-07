@@ -55,7 +55,7 @@ public class CardTrick {
         
         Card pickedCard = pickCard();
 //        System.out.println(pickedCard.getValue());
-//        System.out.println(pickedCard.getSuit());
+
         
        
         int flag= 0;
