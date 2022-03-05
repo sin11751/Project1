@@ -14,13 +14,14 @@ public class Project1 {
     System.out.println("// Please enter a positive number below ten  //"); // user has to enter a postive number between 0 and 9
     int turn=1;
     int confirm=0;
-       
+       try{
        while (confirm==0){  
                System.out.print("Enter number:-");
     Scanner num=new Scanner (System.in);
     int uvalue = num.nextInt(); // number entered by user is saved in uvalue
     int cvalue = (int)(Math.random()*11); // random number choosed by computer using Math.random
-    
+      
+   
         while(uvalue!=cvalue) // if the uvalue is not equal to cvalue user is asked to enter the number until it is equal
         {  turn++;
             if (uvalue>cvalue) //condition that would tell uvalue is greater than cvalue is it's smaller else would work
@@ -38,7 +39,9 @@ public class Project1 {
               uvalue = num.nextInt();}
          
           }
+       
       
+    
        System.out.println("Player choose the right number after "+ turn + " turn"); // would display after how many turns user got the same number as computer
        System.out.println();
        System.out.println("If player want to play more then enter '0' for 'YES' and '1' for 'NO'"); // confirmation if the user want to play again or not
@@ -58,4 +61,6 @@ public class Project1 {
                
             
                
-    }              
+    
+  catch(Exception e)
+      { System.out.println("Please enter a positive number only");      }}  }           
