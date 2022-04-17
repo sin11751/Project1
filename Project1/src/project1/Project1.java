@@ -20,6 +20,9 @@ public class Project1 {
     System.out.println("// Please enter a positive number below ten  //"); // user has to enter a postive number between 0 and 9
     int turn=1;
     int confirm=0;
+        
+        //TEST AUTOMATION
+        
        try{
        while (confirm==0){  
                System.out.print("Enter number:-");
@@ -64,9 +67,7 @@ public class Project1 {
         }
     }
                
-               
+    //TEST AUTOMATION        
             
-               
-    
-  catch(Exception e)
+    catch(Exception e)
       { System.out.println("Please enter a positive number only");      }}  }           
